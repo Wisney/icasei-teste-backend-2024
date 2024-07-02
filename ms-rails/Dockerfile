@@ -22,6 +22,8 @@ ADD . $INSTALL_PATH
 
 RUN mkdir -p $INSTALL_PATH/tmp/pids
 
+RUN rails db:migrate
+
 RUN chmod +x run.sh
 
 CMD ["./run.sh"]
