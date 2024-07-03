@@ -14,6 +14,17 @@ func Writer() *kafka.Writer{
 	return &writer
 }
 
+func Reader() *kafka.Reader{
+	reader := kafka.NewReader(kafka.ReaderConfig{
+		Brokers:   []string{"kafka:29092"},
+		GroupID:   "consumer-group-rails-to-go",
+		Topic:     "rails-to-go",
+		MaxBytes:  10e6, // 10MB
+	})
+	
+	return reader
+}
+
 func Message(data []byte) kafka.Message{
 	return kafka.Message{
 		Value: data,
