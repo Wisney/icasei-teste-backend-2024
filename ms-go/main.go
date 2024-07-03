@@ -7,7 +7,9 @@ import (
 )
 
 func main() {
-	router.Run()
+	go func(){
+		consumers.ListenProduct()
+	}()
 	
-	consumers.ListenProduct()
+	router.Run()
 }
