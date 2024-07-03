@@ -237,7 +237,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"name\": \"Computador\",\n\t\"brand\": \"Microsoft\",\n\t\"price\": 2999.99,\n\t\"description\": \"Xbox + 2 Controles\"\n}"
+                "text": "{\n\t\"name\": \"Computador\",\n\t\"brand\": \"Microsoft\",\n\t\"price\": 2999.99,\n\t\"description\": \"Xbox + 2 Controles\",\n\t\"stock\": 7\n}"
             },
             "parameters": [],
             "headers": [
@@ -273,7 +273,7 @@
             "method": "PATCH",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"description\": \"Computador + Teclado\"\n}"
+                "text": "{\n\t\"description\": \"Computador + Teclado\",\n\t\"stock\": 3\n}"
             },
             "parameters": [],
             "headers": [
