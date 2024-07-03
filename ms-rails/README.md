@@ -5,20 +5,41 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+- Ruby version:
 
-* System dependencies
+  - 3.0.0
 
-* Configuration
+- System dependencies:
 
-* Database creation
+  - rails
+  - SQLite3
+  - Puma
+  - Karafka
 
-* Database initialization
+- Configuration:
 
-* How to run the test suite
+  - git clone
+  - bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+- Database creation:
 
-* Deployment instructions
+  - rails db:create
 
-* ...
+- Database initialization:
+
+  - rails db:migrate
+
+- How to run the test suite:
+
+  - rails test
+
+- Services (job queues, cache servers, search engines, etc.)
+
+- Deployment instructions:
+
+  - bundle install
+  - db:create
+  - db:migrate
+  - bundle exec puma -C config/puma.rb
+
+- Or just run `docker compose up`

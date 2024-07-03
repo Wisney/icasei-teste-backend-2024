@@ -95,7 +95,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"name\": \"Teste do teste\",\n\t\"brand\": \"legal\",\n\t\"price\": 4999.99,\n\t\"description\": \"Super teste\"\n}"
+                "text": "{\n\t\"name\": \"Teste do teste\",\n\t\"brand\": \"legal\",\n\t\"price\": 4999.99,\n\t\"description\": \"Super teste\",\n\t\"stock\": 3\n}"
             },
             "parameters": [],
             "headers": [
@@ -131,7 +131,7 @@
             "method": "PATCH",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"description\": \"Teclado\"\n}"
+                "text": "{\n\t\"description\": \"Teclado\",\n\t\"stock\": 2\n}"
             },
             "parameters": [],
             "headers": [
