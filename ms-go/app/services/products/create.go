@@ -42,6 +42,7 @@ func Create(data models.Product, isAPI bool) (*models.Product, error) {
 	defer db.Disconnect()
 
 	if isAPI {
+		sendProductMessage(data)
 	}
 
 	return &data, nil
